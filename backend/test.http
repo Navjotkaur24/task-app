@@ -1,0 +1,113 @@
+### 
+GET http://localhost:3000/tasks
+
+###
+GET http://localhost:3000/categories
+
+###
+POST http://localhost:3000/categories
+Content-Type: application/json
+
+{
+    "title":"Education",
+    "description":"Make tasks related to Education to become mentally smart and wealthy"
+
+}
+
+### 
+POST http://localhost:3000/tasks
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhZjEwNmVkZTBiYjhmYmIwYjgxNWU3OSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc5NDIwNjY3NSwiZXhwIjoxNzk0MjkzMDc1fQ.AVjDdjym_JyZuquCStDcyXHgjm5d8jch7ifC92onmkw
+
+{
+    "title":"Start Journal",
+    "description":"Write it out, clear your mind"
+
+}
+
+###
+POST http://localhost:3000/categories
+Content-Type: application/json
+
+{
+    "title":"Fashion"
+}
+
+###
+POST http://localhost:3000/tasks
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhZjEwNmVkZTBiYjhmYmIwYjgxNWU3OSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc5NDIwNjY3NSwiZXhwIjoxNzk0MjkzMDc1fQ.AVjDdjym_JyZuquCStDcyXHgjm5d8jch7ifC92onmkw
+
+{
+    "title":"Dress Elegant",
+    "description":"Style is quiet confidence "
+}
+
+###
+POST http://localhost:3000/categories
+Content-Type: application/json
+
+{
+    "title":"Health"
+}
+
+###
+POST http://localhost:3000/tasks
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhZjEwNmVkZTBiYjhmYmIwYjgxNWU3OSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc5NDIwNjY3NSwiZXhwIjoxNzk0MjkzMDc1fQ.AVjDdjym_JyZuquCStDcyXHgjm5d8jch7ifC92onmkw
+
+{
+    "title":"Hit the Gym",
+    "description":"Show up, even when it’s hard"
+}
+
+### 
+DELETE http://localhost:3000/categories/6aefc30be7ad969ff4d9c71f
+Content-Type: application/json
+
+###
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+    "name":"Nav",
+    "email":"test@test.com",
+    "password":"123456"
+
+}
+
+###
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "email":"test@test.com",
+    "password":"123456"
+}
+
+###
+GET http://localhost:3000/tasks
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhZjEwNmVkZTBiYjhmYmIwYjgxNWU3OSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzk0MTgxNTQzLCJleHAiOjE3OTQyNjc5NDN9.GBVxFk0StKxD9PBYPU972egfX33lxkCkR54zjpXa_ok
+
+###
+DELETE http://localhost:3000/tasks/6af11d04a7f362923165c6d6
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhZjEwNmVkZTBiYjhmYmIwYjgxNWU3OSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc5NDIwNjA3MiwiZXhwIjoxNzk0MjkyNDcyfQ.U0bmrAHVlSIF__kWylfV121a5awKINl7crJA4Rjfm64
+
+###
+DELETE http://localhost:3000/tasks/6aefc1651eee358c88426c18
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhZjEwNmVkZTBiYjhmYmIwYjgxNWU3OSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc5NDIwNjA3MiwiZXhwIjoxNzk0MjkyNDcyfQ.U0bmrAHVlSIF__kWylfV121a5awKINl7crJA4Rjfm64
+
+###
+DELETE http://localhost:3000/tasks/6aefc6ac25fa9d565a64d2a6
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhZjEwNmVkZTBiYjhmYmIwYjgxNWU3OSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc5NDIwNjA3MiwiZXhwIjoxNzk0MjkyNDcyfQ.U0bmrAHVlSIF__kWylfV121a5awKINl7crJA4Rjfm64
+
+###
+DELETE http://localhost:3000/tasks/6aefc6b725fa9d565a64d2a8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhZjEwNmVkZTBiYjhmYmIwYjgxNWU3OSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc5NDIwNjA3MiwiZXhwIjoxNzk0MjkyNDcyfQ.U0bmrAHVlSIF__kWylfV121a5awKINl7crJA4Rjfm64
+
+###
+DELETE http://localhost:3000/tasks/6af11c36a7f362923165c6d5
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhZjEwNmVkZTBiYjhmYmIwYjgxNWU3OSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc5NDIwNjA3MiwiZXhwIjoxNzk0MjkyNDcyfQ.U0bmrAHVlSIF__kWylfV121a5awKINl7crJA4Rjfm64
+
+
+
